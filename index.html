@@ -462,14 +462,15 @@
         <div class="footer-email-form">
           <p class="icons-text">Subscribe</p>
           <form class="footer-form">
-            <label for="subscribe"></label>
-            <input
-              class="footer-input"
-              type="email"
-              name="footer-email"
-              id="subscribe"
-              placeholder="E-mail"
-            />
+            <label class="footer-label" for="subscribe">
+              <input
+                class="footer-input"
+                type="email"
+                name="footer-email"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="footer-form-button" type="submit">
               Subscribe
               <svg class="footer-email-icon" width="24" height="24">
@@ -481,7 +482,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-button" type="button">
           <svg class="modal-button-icon" width="8" height="8">
@@ -496,7 +497,7 @@
               <input
                 class="form-input"
                 type="text"
-                name="name"
+                name="user-name"
                 id="user-name"
                 required
               />
@@ -511,7 +512,7 @@
               <input
                 class="form-input"
                 type="tel"
-                name="phone"
+                name="user-phone"
                 id="user-phone"
                 required
               />
@@ -526,7 +527,7 @@
               <input
                 class="form-input"
                 type="email"
-                name="email"
+                name="user-email"
                 id="user-email"
                 required
               />
@@ -539,7 +540,7 @@
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="form-textarea"
-              name="comment"
+              name="user-comment"
               placeholder="Text input"
               id="user-comment"
             ></textarea>
@@ -548,11 +549,11 @@
             <input
               class="check-input visually-hidden"
               type="checkbox"
-              name="policy"
+              name="user-privacy"
               value="true"
-              id="accept"
+              id="user-privacy"
             />
-            <label class="check-label" for="accept"
+            <label class="check-label" for="user-privacy"
               ><span class="check-span">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-privacy"></use>
